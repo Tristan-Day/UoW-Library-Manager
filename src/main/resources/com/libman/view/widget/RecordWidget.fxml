@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.SVGPath?>
+
+<GridPane style="-fx-background-color: #282942; -fx-border-color: #F3F3F3; -fx-border-width: 1.5px; -fx-border-radius: 20px;" stylesheets="@../../stylesheet.css" vgap="2.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libman.display.controller.widget.RecordWidget">
+  <columnConstraints>
+    <ColumnConstraints hgrow="NEVER" minWidth="-Infinity" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="NEVER" minWidth="-Infinity" />
+      <ColumnConstraints hgrow="NEVER" minWidth="-Infinity" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="title" style="-fx-font-weight: Bold;" styleClass="text-subheading" text="ITEM TITLE">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="subtitle" text="ITEM SUBTITLE" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Label>
+      <SVGPath fx:id="viewIcon" content="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" fill="WHITE" fillRule="EVEN_ODD" onMouseClicked="#onClick" scaleX="1.5" scaleY="1.5" GridPane.columnIndex="3" GridPane.rowSpan="2147483647">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </SVGPath>
+      <Label fx:id="viewLabel" onMouseClicked="#onClick" styleClass="text-small" text="VIEW" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowSpan="2147483647">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Region GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2147483647" GridPane.vgrow="NEVER" />
+      <Region fx:id="clickableRegion" onMouseClicked="#onClick" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.hgrow="NEVER" GridPane.rowSpan="2147483647" GridPane.vgrow="NEVER">
+         <GridPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </GridPane.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Region>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</GridPane>

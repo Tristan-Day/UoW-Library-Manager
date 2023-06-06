@@ -1,0 +1,12 @@
+---
+BasedOnStyle: Microsoft
+IndentWidth: '4'
+UseTab: Never
+
+BinPackArguments: false
+BinPackParameters: false
+
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: false
+ExperimentalAutoDetectBinPacking: false
+...

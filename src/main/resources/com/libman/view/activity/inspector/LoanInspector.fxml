@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="root" style="-fx-background-color: #282A36;" stylesheets="@../../../stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libman.display.controller.activity.inspector.LoanInspector">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="-Infinity" vgrow="NEVER" />
+        <RowConstraints minHeight="-Infinity" vgrow="NEVER" />
+        <RowConstraints minHeight="-Infinity" vgrow="NEVER" />
+    </rowConstraints>
+    <children>
+        <Label styleClass="text-subheading" text="Active Loans" />
+        <Label styleClass="text-heading" text="Loan Details" GridPane.rowIndex="1" />
+        <GridPane style="-fx-border-color: #008FFF; -fx-border-width: 4px; -fx-border-radius: 20px;" GridPane.columnSpan="2" GridPane.rowIndex="2">
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="NEVER" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="NEVER" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                <RowConstraints minHeight="-Infinity" vgrow="NEVER" />
+                <RowConstraints minHeight="-Infinity" vgrow="NEVER" />
+                <RowConstraints minHeight="-Infinity" vgrow="NEVER" />
+                <RowConstraints minHeight="-Infinity" vgrow="NEVER" />
+            </rowConstraints>
+            <GridPane.margin>
+                <Insets top="20.0" />
+            </GridPane.margin>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <children>
+                <Label fx:id="resourceName" styleClass="text-small" text="RESOURCE NAME" />
+                <Label fx:id="resouceType" text="RESOURCE TYPE" GridPane.rowIndex="1" />
+                <Label fx:id="loanStatus" style="-fx-font-weight: Bold; -fx-font-size: 13pt; -fx-border-width: 1.5px; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: #1F1F32; -fx-border-color: #F3F3F3;" text="LOAN STATUS" GridPane.columnIndex="1" GridPane.rowSpan="2">
+                    <padding>
+                        <Insets bottom="7.0" left="17.0" right="17.0" top="7.0" />
+                    </padding>
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                </Label>
+                <Label styleClass="text-small" text="SINCE:" GridPane.columnIndex="2" GridPane.rowSpan="2">
+                    <GridPane.margin>
+                        <Insets left="30.0" />
+                    </GridPane.margin>
+                </Label>
+                <Label fx:id="loanStatusDate" text="00 / 00 / 00" GridPane.columnIndex="3" GridPane.rowSpan="2">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Label>
+                <GridPane hgap="20.0" GridPane.columnSpan="4" GridPane.rowIndex="3">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label styleClass="text-small" text="NAME" GridPane.halignment="LEFT" />
+                        <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowSpan="2147483647" />
+                        <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowSpan="2147483647" />
+                        <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowSpan="2147483647" />
+                        <Label fx:id="patronName" text="- -" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+                        <Label styleClass="text-small" text="TELEPHONE NUMBER" GridPane.columnIndex="2" GridPane.halignment="LEFT" />
+                        <Label fx:id="patronMobile" text="- -" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+                        <Label styleClass="text-small" text="EMAIL ADDRESS" GridPane.columnIndex="4" GridPane.halignment="LEFT" />
+                        <Label fx:id="patronEmail" text="- -" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+                        <Label styleClass="text-small" text="POSTCODE" GridPane.columnIndex="6" GridPane.halignment="LEFT">
+                            <GridPane.margin>
+                                <Insets />
+                            </GridPane.margin>
+                        </Label>
+                        <Label fx:id="patronPostcode" text="- -" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                            <GridPane.margin>
+                                <Insets />
+                            </GridPane.margin>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" right="5.0" top="5.0" />
+                    </padding>
+                    <GridPane.margin>
+                        <Insets top="15.0" />
+                    </GridPane.margin>
+                </GridPane>
+                <HBox spacing="10.0" GridPane.columnSpan="4" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <children>
+                        <Label styleClass="text-small" text="LATE FEE: " />
+                        <Label fx:id="loanLateFee" text="£ 0.00 (0 Days Late)" />
+                    </children>
+                    <GridPane.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                    </GridPane.margin>
+                </HBox>
+                <VBox alignment="CENTER" GridPane.columnIndex="4" GridPane.rowSpan="2147483647">
+                    <children>
+                        <Label styleClass="text-small" text="PREVIEW">
+                            <padding>
+                                <Insets bottom="20.0" />
+                            </padding>
+                        </Label>
+                        <ImageView fx:id="resourcePreview" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../resource-default.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+                </VBox>
+            <HBox spacing="30.0" GridPane.columnSpan="4" GridPane.rowIndex="5">
+               <children>
+                      <Button fx:id="renewButton" mnemonicParsing="false" onAction="#handleResourceRenew" text="RENEW LOAN" />
+                      <Button fx:id="returnButton" mnemonicParsing="false" onAction="#handleResourceReturn" text="REGISTER RETURN" />
+               </children>
+            </HBox>
+            </children>
+        </GridPane>
+        <Button mnemonicParsing="false" onAction="#handleReturn" text="RETURN" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowSpan="2" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</GridPane>

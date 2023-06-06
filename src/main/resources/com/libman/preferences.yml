@@ -1,0 +1,5 @@
+organisation: Winchester Community Library
+receipt-message: Thank You For Visiting!
+loan-period: 14
+reservation-period: 30
+database: {port: '3306', host: 127.0.0.1, username: libman-client, password: LwvSMkTbddK1684}

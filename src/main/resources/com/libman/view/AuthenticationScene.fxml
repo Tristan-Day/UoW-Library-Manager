@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<AnchorPane style="-fx-background-color: #282A36;" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libman.display.controller.scene.AuthenticationScene">
+   <children>
+      <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefWidth="100.0" style="-fx-background-color: #21222C; -fx-border-width: 0px 0px 4px 0px; -fx-border-color: #008FFF;">
+               <children>
+                  <Label style="-fx-font-size: 16pt; -fx-font-weight: Bold;" text="LIBMAN" />
+                  <Region maxHeight="-Infinity" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                  <Label fx:id="clock" style="-fx-font-size: 16pt; -fx-font-weight: Bold;" text="00:00 AM" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </HBox>
+            <Region VBox.vgrow="ALWAYS" />
+            <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="105.0" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="0.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <SVGPath content="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" fill="WHITE" scaleX="4.5" scaleY="4.5" scaleZ="0.0" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="30.0" left="30.0" right="55.0" top="30.0" />
+                     </GridPane.margin>
+                  </SVGPath>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-font-size: 30pt; -fx-font-weight: Bold;" text="Winchester" GridPane.columnIndex="1" GridPane.valignment="CENTER" />
+                  <Label alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="247.0" style="-fx-font-size: 20pt; -fx-font-weight: None;" text="Community Library" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+            </GridPane>
+            <GridPane alignment="CENTER" hgap="30.0" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-border-color: #008FFF; -fx-border-width: 4px; -fx-border-radius: 20px;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" style="-fx-font-size: 20pt; -fx-font-weight: Bold;" text="Please Enter your Credentials" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="30.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label style="-fx-font-size: 16pt;" text="USERNAME" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="username" maxWidth="-Infinity" prefWidth="250.0" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label style="-fx-font-size: 16pt; -fx-font-weight: None;" text="PASSWORD" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </Label>
+                  <PasswordField fx:id="password" maxWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <Button mnemonicParsing="false" onAction="#handleSubmit" text="SUBMIT" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets top="35.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Label fx:id="response" alignment="BOTTOM_LEFT" style="-fx-font-size: 16pt;" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="7.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </GridPane>
+            <Region VBox.vgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleExit" text="EXIT" />
+                  <Region maxHeight="-Infinity" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#handleRegister" text="REGISTER" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

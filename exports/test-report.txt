@@ -1,0 +1,12 @@
+############ LIBMAN - Winchester Community Library ############
+
+[Resource Report]
+
+ITEM: Compact Disk | Electric Nights
+NEXT RETURN DATE: 2023-05-04
+
+COPIES REGISTERED: 2
+COPIES AVAILABLE: 1
+COPIES ON-LOAN: 1
+
+######################### 2023-05-09 #########################

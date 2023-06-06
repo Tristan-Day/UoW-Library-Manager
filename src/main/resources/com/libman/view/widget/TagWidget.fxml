@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+
+
+<Label fx:id="value" style="-fx-font-weight: Bold; -fx-font-size: 12pt; -fx-border-width: 1.5px; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: #1F1F32; -fx-border-color: #F3F3F3;" stylesheets="@../../stylesheet.css" text="TAG VALUE" textAlignment="CENTER" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libman.display.controller.widget.TagWidget">
+   <padding>
+      <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+   </padding>
+</Label>
