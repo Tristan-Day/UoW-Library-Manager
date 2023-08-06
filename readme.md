@@ -9,17 +9,18 @@ This repository contains the code submitted for Software Engineering module (BS2
 View and Loan out Resources
 <br/>
 
-![Item View](https://github.com/Tristan-Day/UoW-Library-Manager/assets/41393868/0109e89f-7762-4b42-a2c6-facfc5841134)
+![243776329-5bbd5d95-c031-4cb0-8056-28f404bd926a](https://github.com/Tristan-Day/UoW-Library-Manager/assets/41393868/88cb2074-ff88-4c69-83c7-9454155ace94)
+
 
 Register and Authenticate Users
 <br/>
 
-![Registration Page](https://github.com/Tristan-Day/UoW-Library-Manager/assets/41393868/109861fc-d3f7-4d12-b0a0-d5b0ce2fd76d)
+![243776534-45ea52ce-8a0f-4fc3-9634-96d696582409](https://github.com/Tristan-Day/UoW-Library-Manager/assets/41393868/164e10a1-2fdf-42f7-8624-a95b94e172d5)
 
 Create, Delete and Update Resources
 <br/>
 
-![Update Resources](https://github.com/Tristan-Day/UoW-Library-Manager/assets/41393868/2eeda1d3-4f46-41c1-8dc7-2f3a84e46798)
+![243776694-d5e38f23-985d-4189-b9f7-7e79cb8a6896](https://github.com/Tristan-Day/UoW-Library-Manager/assets/41393868/e85c06c0-6d57-435e-8061-35599c569efb)
 
 ## System Requirements
 
